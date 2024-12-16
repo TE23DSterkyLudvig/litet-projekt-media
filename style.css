@@ -1,0 +1,239 @@
+body{
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    grid-template-rows:  34vh 34vh;
+    background-color: white;
+    font-family: "Montserrat", sans-serif;
+    gap: 2.5px;
+}
+
+header{
+    background-image: url(./img/723882_0.webp);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size:contain;  
+    display: flex;
+    flex-direction: row;
+    justify-content:first baseline;
+    height: 200px;
+    align-items: center;
+    grid-column: 1/3;
+}
+#rubrik{
+    color: black;
+    background-color: gray;
+    font-size: 50px;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 15px;
+}
+.vit{
+    background-color: #d6d4d4;
+    font-family: "Montserrat", sans-serif;
+    font-size: larger;
+    a:hover{
+        color: orange;
+        background-color: aquamarine;
+    }
+    a:active{
+        color: lightblue;
+        background-color: black;
+    }
+    a{
+        background-color: #d6d4d4;
+        text-decoration: none;
+    }
+}
+.grå{
+    background-color: #d6d4d4;
+    margin-right: 60%;
+    font-family: "Montserrat", sans-serif;
+}
+nav{
+    grid-column: 1/3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    #navrubrik{
+        text-align: center;
+        background-color: turquoise;}
+        font-family: "Montserrat", sans-serif;
+}
+#korv{
+    height:300px;
+    padding: 0%;
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+#ingredienser{
+grid-row: 4/5;
+grid-column: 1/2;
+background-color: white;
+}
+ol{
+    display: inline-block;
+    background-color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: small;
+}
+main{
+    grid-row: 3/5;
+}
+#instruk{
+    li{
+        margin-bottom: 5%;
+        font-size: large;
+    }
+}
+#instrukrubrik{
+    font-size: larger;
+}
+.border{
+    border: 5px solid black;
+}
+
+footer{
+    grid-column: 1/3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5%;
+    border: 5px solid black;
+    font-family: "Montserrat", sans-serif;
+    font-size: larger;
+    a:hover{
+        color: orange;
+        background-color: aquamarine;
+    }
+    a:active{
+        color: lightblue;
+        background-color: black;
+    }
+    a{
+        background-color: #d6d4d4;
+        text-decoration: none;
+    }
+}
+
+#Starthopp{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/3;
+    font-family: "Montserrat", sans-serif;
+    font-size: larger;
+    a:hover{
+        color: orange;
+        background-color: aquamarine;
+    }
+    a:active{
+        color: lightblue;
+        background-color: black;
+    }
+    a{
+        background-color: #d6d4d4;
+        text-decoration: none;
+    }
+}
+
+
+
+
+/* Om oss*/
+
+#omosshead{
+    display: flex;
+    flex-direction: row;
+  justify-content: center;
+  align-items: center;}
+  .rubrik-kategorier{
+    background-color: #d6d4d4;
+    font-family: "Montserrat", sans-serif;
+  }
+  .tillbaka{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/3;
+    a:hover{
+        color: orange;
+        background-color: aquamarine;
+    }
+    a:active{
+        color: lightblue;
+        background-color: black;
+    }
+    a{
+        background-color: #d6d4d4;
+        padding: 30px;
+        text-decoration: none;
+    }
+  }
+
+  /*Kontakt*/
+
+  #kontakthead{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  #kontakt{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    grid-column: 1/3;
+    a:hover{
+        color: orange;
+        background-color: aquamarine;
+    }
+    a:active{
+        color: lightblue;
+        background-color: black;
+    }
+    a{
+        background-color: #d6d4d4;
+        padding: 30px;
+        text-decoration: none;
+    }
+  }
+  /*Hjälp*/
+  #hjälphead{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#frågor{
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+}
+#frågor-svar{
+    display: inline-block;
+    border: 5px solid black;
+    li{
+        font-size: large;
+    }
+}
+
+
+@media screen and (min-width:700px) and (max-width:1023px){
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+}
+@media screen and (min-width: 400px) and (max-width:700px) {
+    body{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
